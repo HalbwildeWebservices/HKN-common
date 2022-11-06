@@ -4,9 +4,8 @@
   "description": "common interfaces and objects for HKN webservices",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist/"],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+  "scripts": { 
+    "prepare": "npm run build",
     "build": "npx tsc"
   },
   "author": "Halbwilde Kajakfahrer Norddeutschland - Ralf Krauth and others",

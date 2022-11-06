@@ -1,6 +1,6 @@
 {
   "name": "hkn-common",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "common interfaces and objects for HKN webservices",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

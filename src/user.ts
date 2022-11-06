@@ -1,4 +1,4 @@
-import { Permissions } from "./permissions";
+import { EPermission, Permissions } from "./permissions";
 import { IAddress } from "./address";
 import { IPhoneNumber } from "./phoneNumber";
 
@@ -9,7 +9,7 @@ export interface IUser {
     lastName: string,
     isActive: boolean,
     email: string,
-    permissions?: Permissions[],
+    permissions?: EPermission[],
     address?: IAddress,
     phoneNumbers?: IPhoneNumber[],
     password?: string,

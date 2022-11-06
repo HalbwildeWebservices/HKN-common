@@ -1,4 +1,4 @@
-import { EPermission, Permissions } from "./permissions";
+import { EPermission } from "./permissions";
 import { IAddress } from "./address";
 import { IPhoneNumber } from "./phoneNumber";
 

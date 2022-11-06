@@ -1,5 +1,5 @@
 {
-  "name": "common",
+  "name": "hkn-common",
   "version": "1.0.0",
   "description": "common interfaces and objects for HKN webservices",
   "main": "dist/index.js",

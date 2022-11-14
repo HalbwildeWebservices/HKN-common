@@ -5,4 +5,8 @@ export interface IAddress {
     zipCode: string,
     town: string,
     country: string,
+
 }
+
+export interface ICreateAddressRequest extends Omit<IAddress, 'addressId'> {}
+

@@ -11,5 +11,6 @@ export enum EPermission {
 
 export interface IPermission {
     permissionId: string,
-    name: EPermission,
+    name: string,
 }
+

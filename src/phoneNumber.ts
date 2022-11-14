@@ -3,3 +3,5 @@ export interface IPhoneNumber {
     number: string,
     description: string,
 }
+
+export interface ICreatePhoneNumberRequest extends Omit<IPhoneNumber, 'phoneId'> {}

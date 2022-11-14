@@ -18,7 +18,7 @@ export interface IUser {
     updatedAt: string,
 }
 
-export interface ICreateUserRequest extends Omit<IUser, 'isActive' | 'permissions' | 'address' | 'phoneNumbers' | 'createdAt' | 'updatedAt'>{
+export interface ICreateUserRequest extends Omit<IUser, 'userId' | 'isActive' | 'permissions' | 'address' | 'phoneNumbers' | 'createdAt' | 'updatedAt'>{
     address: ICreateAddressRequest,
     phoneNumbers: ICreatePhoneNumberRequest[],
 }

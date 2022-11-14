@@ -1,6 +1,6 @@
 import { IPermission } from "./permissions";
 import { IAddress, ICreateAddressRequest } from "./address";
-import { IPhoneNumber } from "./phoneNumber";
+import { ICreatePhoneNumberRequest, IPhoneNumber } from "./phoneNumber";
 
 
 export interface IUser {
@@ -18,8 +18,9 @@ export interface IUser {
     updatedAt: string,
 }
 
-export interface ICreateUserRequest extends Omit<IUser, 'isActive' | 'permissions' | 'address' | 'createdAt' | 'updatedAt'>{
+export interface ICreateUserRequest extends Omit<IUser, 'isActive' | 'permissions' | 'address' | 'phoneNumbers' | 'createdAt' | 'updatedAt'>{
     address: ICreateAddressRequest,
+    phoneNumbers: ICreatePhoneNumberRequest[],
 }
 
 export interface IUserResponse extends Omit<IUser, 'password'> {}

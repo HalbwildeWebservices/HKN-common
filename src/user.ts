@@ -14,8 +14,8 @@ export interface IUser {
     address: IAddress,
     phoneNumbers: IPhoneNumber[],
     password: string,
-    createdAt: string,
-    updatedAt: string,
+    createdAt: Date,
+    updatedAt: Date,
 }
 
 export interface ICreateUserRequest extends Omit<IUser, 'userId' | 'isActive' | 'permissions' | 'address' | 'phoneNumbers' | 'createdAt' | 'updatedAt'>{

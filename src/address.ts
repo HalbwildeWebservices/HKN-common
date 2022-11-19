@@ -8,5 +8,11 @@ export interface IAddress {
 
 }
 
-export interface ICreateAddressRequest extends Omit<IAddress, 'addressId'> {}
+export interface ICreateAddressRequest {
+    street: string,
+    houseNumber: string,
+    zipCode: string,
+    town: string,
+    country: string,
+}
 

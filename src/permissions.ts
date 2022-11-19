@@ -15,6 +15,6 @@ export interface IPermission {
 }
 
 export interface IPermissionResponse {
-    permissions: string[];
+    permissions: IPermission[];
 }
 

@@ -3,9 +3,11 @@ export enum EPermission {
     UPDATE_USER = 'update_user',
     DELETE_USER = 'delete_user',
     ADD_USER = 'add_user',
-    ADD_CONVENTION = 'add_convention',
-    UPDATE_CONVENTION = 'update_convention',
-    DELETE_CONVENTION = 'delete_convention',
+    ADD_EVENT = 'add_event',
+    UPDATE_EVENT = 'update_event',
+    DELETE_EVENT = 'delete_event',
+    ADD_PERMISSION = 'add_permission',
+    DELETE_PERMISSION = 'delete_permission',
     DEFAULT = 'default',
 }
 

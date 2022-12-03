@@ -15,4 +15,3 @@ export interface ICreateAddressRequest {
     town: string,
     country: string,
 }
-

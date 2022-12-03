@@ -1,6 +1,7 @@
 import { IPermission } from "./permissions";
 import { IAddress, ICreateAddressRequest } from "./address";
 import { ICreatePhoneNumberRequest, IPhoneNumber } from "./phoneNumber";
+import { ILegal, IAcceptLegal } from "./legal";
 
 export interface IUser {
     userId: string;
@@ -12,9 +13,10 @@ export interface IUser {
     email: string;
     permissions: IPermission[];
     address: IAddress;
+    legal: ILegal;
     phoneNumbers: IPhoneNumber[];
-    createdAt: string;
-    updatedAt: string;
+    createdAt: Date;
+    updatedAt: Date;
 }
 export interface ICreateUserRequest {
     username: string,
@@ -24,6 +26,7 @@ export interface ICreateUserRequest {
     email: string,
     address: ICreateAddressRequest,
     phoneNumbers: ICreatePhoneNumberRequest[],
+    legal: IAcceptLegal,
 }
 
 export interface IPatchUserRequest {
@@ -31,6 +34,7 @@ export interface IPatchUserRequest {
     lastName: string,
     email: string,
     address: ICreateAddressRequest,
+    legal: IAcceptLegal,
 }
 
 export interface IUserResponse {

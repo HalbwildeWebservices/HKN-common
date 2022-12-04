@@ -6,7 +6,7 @@ export enum EPermission {
     ADD_EVENT = 'add_event',
     UPDATE_EVENT = 'update_event',
     DELETE_EVENT = 'delete_event',
-    READ_PERMISSION = 'add_permission',
+    READ_PERMISSION = 'read_permission',
     MANAGE_PERMISSION = 'manage_permission',
     DEFAULT = 'default',
 }
